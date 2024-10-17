@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Student Record</title>
+</head>
+<body>
+   <div class="main">
+    <div class="inputs">
+        <input type="text" id="stdFirstName" class="inp" placeholder="Enter your first name">
+        <input type="text" id="stdLastName" class="inp" placeholder="Enter your last name">
+        <input type="text" id="stdAge" class="inp" placeholder="Enter your age">
+        <input type="text" id="stdEdu" class="inp" placeholder="Enter your education">
+        <input type="text" id="stdID" class="inp" placeholder="Enter your ID">
+        <button onclick="addStudent()" class="inp-btn">Add Student</button>
+        <button onclick="deleteAll()" class = "inp-btn">Delete All</button>
+
+    </div>
+    <div class="main">
+        <table>
+            <thead>
+            <tr>
+                <th>S.no</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Age</th>
+                <th>Qualification</th>
+                <th>ID</th>
+                <th>For Delete</th>
+                <th>For Edit</th>
+            </tr>
+        </thead>
+        <tbody id="tbody">
+            
+        </tbody>
+        <tfoot>
+            
+        </tfoot>
+        </table>
+    </div>
+   </div> 
+   <script src="app.js"></script>
+</body>
+</html>
